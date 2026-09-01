@@ -1,1 +1,131 @@
-/* Add you CSS here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)),
+    url('img/laptop.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  color: #ffffff;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 0 auto 20px;
+  background: #ffffff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.title {
+  margin: 8px 0 0;
+  font-size: 1.2rem;
+  color: #dfeaf1;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto 60px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  padding: 30px 25px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #102a43;
+  font-size: 1.8rem;
+}
+
+.bio p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-list li {
+  background: #e6f0ff;
+  color: #163d75;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: inline-block;
+  text-decoration: none;
+  background: #102a43;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.social-links a:hover {
+  background: #1f4e79;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .card {
+    padding: 22px 18px;
+  }
+}
