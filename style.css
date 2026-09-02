@@ -15,8 +15,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)),
-    url('img/laptop.jpg');
+  background-image: linear-gradient(rgba(15, 23, 42, 0.40), rgba(15, 23, 42, 0.40)),
+    url('img/hero-bg.JPG');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -28,11 +28,11 @@ body {
 }
 
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #ffffff;
+  /* border: 5px solid #ffffff; */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   display: block;
   margin: 0 auto 20px;
@@ -92,6 +92,13 @@ h2 {
   border-radius: 999px;
   font-weight: bold;
   font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-list li i {
+  font-size: 1rem;
 }
 
 .social-links {
@@ -101,7 +108,9 @@ h2 {
 }
 
 .social-links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
   background: #102a43;
   color: #ffffff;
@@ -121,8 +130,8 @@ h2 {
   }
 
   .profile-pic {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
   }
 
   .card {
