@@ -7,7 +7,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <header class="navbar">
+    <nav class="nav-container">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <header class="hero">
     <div class="hero-content">
       <img src="img/me.png" alt="Profile picture" class="profile-pic">
@@ -17,7 +29,7 @@
   </header>
 
   <main class="container">
-    <section class="card bio">
+    <section id="about" class="card bio">
       <h2>About Me</h2>
       <p>
         Hello! I am a student learning web development and building my skills in HTML, CSS,
@@ -25,7 +37,8 @@
       </p>
     </section>
 
-    <section class="card skills">
+
+    <section id="skills" class="card skills">
       <h2>Skills</h2>
       <ul class="skill-list">
         <li><i class="fa-solid fa-c"></i> C</li>
@@ -38,8 +51,8 @@
       </ul>
     </section>
 
-    <section class="card links">
-      <h2>Connect</h2>
+    <section id="contact" class="card links">
+      <h2>Contact Me</h2>
       <div class="social-links">
         <a href="https://github.com/kayleng77" target="_blank" rel="noreferrer">
         <i class="fa-brands fa-github"></i>GitHub
@@ -52,6 +65,9 @@
         </a>
       </div>
     </section>
+
+    <img src="img/Daisy_Mae_NH.png" alt="Daisy Mae" class="isabelle-photo">
+
   </main>
 </body>
 </html>
